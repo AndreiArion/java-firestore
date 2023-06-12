@@ -1,0 +1,6 @@
+{
+  "name": "ExampleFirestoreBeamWrite",
+  "description": "Template for example Firestore write Beam job.",
+  "parameters": [
+  ]
+}

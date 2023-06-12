@@ -77,7 +77,7 @@ public class ExampleFirestoreBeamWrite {
         .apply(FirestoreIO.v1().write().batchWrite().withRpcQosOptions(rpcQosOptions).build());
 
     // run the pipeline
-    pipeline.run().waitUntilFinish();
+    pipeline.run();//Do not run .waitUntilFinish(); because not allowed in a template
   }
 
   private static String createDocumentName(String collectionId, String cityDocId) {
